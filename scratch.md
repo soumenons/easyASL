@@ -13,6 +13,6 @@
     - i could approach this at first with a smaller scope - having reverse search for a small group of signs if available
   
   # thoughts
-  - a thought I want to keep in mind throughout any approach is the goal of not creating something that is trying to **teach** ASL. learning ASL from an amazing deaf-first teaching service has really taught me the importance of learning ASL from people in the deaf community, and no tool would be able to replace or replicate that experience! 
+  - a thought I want to keep in mind throughout any approach is the goal of not creating something that is trying to **teach** ASL. learning ASL from an amazing deaf-first teaching service has really taught me the [importance of learning ASL from people in the deaf community](https://signablevi5ion.com/who-do-we-learn-asl-from/), and no tool would be able to replace or replicate that experience! 
     - instead, i want to use technology to aid in areas that can support the language learning using resources that are created by the deaf community
-  - one main takeaway from learning ASL is the importance of looking at ASL in a lens detached from english, this is something i want to keep in mind throughout any implementations as well
+  - one main takeaway from learning ASL is the importance of looking at ASL in a [lens detached from englis](https://www.lifeprint.com/asl101/topics/history8.htm)h, this is something i want to keep in mind throughout any implementations as well
