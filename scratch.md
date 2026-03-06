@@ -1,4 +1,35 @@
 # plan
+
+## ASLLRP ASL Sign Bank
+- batch_signs_v1.zip (1.9G)
+- batch_signs_v2.zip (1.9G)
+- asllvd_signs_2024_06_27.csv
+
+Sign details CSV:
+Columns:
+- Video ID number
+- **main entry gloss label**	
+- **entry/variant gloss label**	
+- occurrence label
+- start frame of video clip containing the sign (relative to full videos)	
+- end frame of video clip containing the sign (relative to full videos)	
+- start frame of the sign (relative to full videos)	
+- end frame of the sign (relative to full videos)	
+- Dominant start handshape	
+- Non-dominant start handshape	
+- Dominant end handshape	
+- Non-dominant end handshape	
+- **full video file**	
+- **sign type**
+- Class Label
+
+Match file to detail information using "full video file" column
+
+
+Todo:
+- [ ] Trial with v1 & v2
+- [ ] Start with only lexical signs
+
 ## dataset
 this is the crux of the project, so i want to go through the options i have
 - [ ] (WLASL) [Word-level Deep Sign Language Recognition from Video: A New Large-scale Dataset and Methods Comparison](https://dxli94.github.io/WLASL/)
@@ -13,18 +44,25 @@ Sign Language (ASL) recognition."
         - what this means: gloss labels are the english words associated with physical signs used in computational sign recognition. ASL as it's own language does not have a 1:1 connection with English labels, and the WLASL dataset assumes otherwise.
       - in finding this paper however, i found that they have their own dataset!
       - the paper also goes on to display other elements of the dataset that show the authors lack of understanding the relationship between ASL and English
-- [ ] [ASLLRP ASL Sign Bank](https://dai.cs.rutgers.edu/dai/s/signbank)
+- [X] [ASLLRP ASL Sign Bank](https://dai.cs.rutgers.edu/dai/s/signbank)
     - Metrics: 
       - 3,542 distinct signs (not including fingerspelled signs, classifiers, or gestures).
 - [ ] [MS-ASL: A Large-Scale Data Set and Benchmark for Understanding American Sign Language (2019)](https://arxiv.org/abs/1812.01053)
   - Metrics:
     -  1000 signs in "real-life recording conditions", from 25,000 annotated videos
    - also proposed I3D as a stable architecture for sign-language recognition in the paper
+ - [X] [ASL-LEX database](https://asl-lex.org/about.html)
+   - Metrics:
+     - 2,723 signs
+     - lexical database, not video
+   - contains lexical and phonological properties, could be interesting to use this information to select a smaller dataset of signs to work with
 
 ## other interesting datasets
 - [The TUB Sign Language Corpus Collection](https://arxiv.org/html/2508.05374v1)
   -  German Sign Language, Peruvian Sign Language, Costa Rican Sign Language, Colombian Sign Language, Chilean Sign Language, Argentinian Sign Language, Mexican Sign Language
--  
+-  [How2Sign Dataset](https://how2sign.github.io/)
+   -   First large-scale multimodal and multiview continuous American Sign Language dataset 
+   -  good dataset option for attempting continuous sign language recognition?
 
 # ideas
 
