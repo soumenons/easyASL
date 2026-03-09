@@ -3,6 +3,7 @@
 ## ASLLRP ASL Sign Bank
 - batch_signs_v1.zip (1.9G)
 - batch_signs_v2.zip (1.9G)
+- batch_signs_v3.zip (1.9G)
 - asllvd_signs_2024_06_27.csv
 
 Sign details CSV:
@@ -27,7 +28,8 @@ Match file to detail information using "full video file" column
 
 
 Todo:
-- [ ] Trial with v1 & v2
+- [X] Trial with v1 & v2
+- [ ] Trial with v1, v2, v3
 - [ ] Start with only lexical signs
 
 ## dataset
