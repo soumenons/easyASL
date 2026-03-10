@@ -179,7 +179,8 @@ def print_gloss_stats(available_counts: pd.Series, min_examples: int):
 
 def main(args):
     csv_path   = Path(args.csv)
-    video_dirs = [Path(d) for d in args.video_dirs]
+    video_dir = Path(args.video_dir)
+    video_dirs = [Path(d) for d in video_dir.iterdir()]
     output_dir = Path(args.output_dir) if args.output_dir else None
 
     allowed_types = set(BASE_SIGN_TYPES)
@@ -253,8 +254,6 @@ def main(args):
                 skipped += 1
                 continue
 
-            if args.symlink:
-                dst.symlink_to(Path(row["_src_path"]).resolve())
             else:
                 shutil.copy2(row["_src_path"], dst)
             copied += 1
@@ -268,7 +267,7 @@ def main(args):
     else:
         print("\n[DRY RUN] Nothing written. Re-run with --execute to build the dataset.")
         print(f"  python preprocess_dataset.py --csv {csv_path} "
-              f"--video_dirs {' '.join(args.video_dirs)} "
+              f"--video_dir {args.video_dir} "
               f"--output_dir data/videos --execute")
 
 
@@ -276,11 +275,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Preprocess ASLLRP Sign Bank metadata")
 
     parser.add_argument("--csv",               type=str, required=True)
-    parser.add_argument("--video_dirs",        type=str, nargs="+", required=True)
+    parser.add_argument("--video_dir",        type=str, required=True)
     parser.add_argument("--output_dir",        type=str, default=None)
     parser.add_argument("--min_examples",      type=int, default=2)
     parser.add_argument("--include_compounds", action="store_true")
-    parser.add_argument("--symlink",           action="store_true")
     parser.add_argument("--execute",           action="store_true")
 
     args = parser.parse_args()

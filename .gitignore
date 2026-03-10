@@ -1,4 +1,5 @@
 # .gitignore
 data/raw/
+data/videos/
 data/asllvd_signs_2024_06_27.csv
 scratch.ipynb
