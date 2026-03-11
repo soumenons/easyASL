@@ -35,7 +35,7 @@ import pandas as pd
 # Config
 # ---------------------------------------------------------------------------
 
-BASE_SIGN_TYPES = {"Lexical Signs", "Loan Signs"}
+BASE_SIGN_TYPES = {"Lexical Signs"}
 COMPOUND_TYPE   = "Compound Signs"
 
 COLUMNS = [
