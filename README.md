@@ -11,7 +11,7 @@ Real-time word-level ASL sign recognition using an encoder-only Transformer. Thi
 - **[ASLLRP ASL Sign Bank](https://dai.cs.rutgers.edu/dai/s/signbank)** — Annotated video clips of native Deaf signers. Requires free account registration to download.
 - **[ASL-LEX 2.0](https://asl-lex.org/)** — Lexical database with frequency ratings from Deaf signers used to inform vocabulary selection. Video access requires contacting the authors.
 
-> **Note:** WLASL was intentionally avoided due to documented quality and consent concerns.
+> **Note:** WLASL was intentionally avoided due to [documented quality and consent concerns](https://www.bu.edu/asllrp/rpt21/asllrp21.pdf).
 
 ---
 
