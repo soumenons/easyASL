@@ -1,6 +1,6 @@
 # easyASL
 
-Real-time word-level ASL sign recognition using an encoder-only Transformer. This project aims to be a genuine ASL tool — not a fingerspelling classifier.
+Real-time word-level ASL sign recognition using an encoder-only Transformer.
 
 > **Status:** Data pipeline and landmark extraction working. Training pipeline in progress.
 
